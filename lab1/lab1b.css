@@ -1,0 +1,75 @@
+#header {
+    display: table-row;
+}
+
+#header img, h1, a{
+    display: table-cell;
+}
+
+#header img{
+    height: 57px;
+    width: 150px;
+    float: left;
+}
+
+#header h1{
+    font-size: 300%;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    
+}
+
+#header a {
+    font-family: sans-serif;
+    background-color: darkblue;
+    text-align: center;
+    padding: 10px 10px 0 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    float: right;
+}
+
+#navbar{
+    float: left;
+}
+
+#navbar li {
+    font-family: sans-serif;
+    background-color: darkblue;
+    list-style: none;
+    width: 200px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+#chat{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    width: 100px;
+    height: 25px;
+    border-color: black;
+    border-style: solid;
+    background-color: white;
+}
+
+#chat img{
+    background: white;
+    width: 20px;
+}
+
+#content{
+    width: 50%;
+    display: inline-block;
+}
+
+
