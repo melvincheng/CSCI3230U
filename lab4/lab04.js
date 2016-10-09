@@ -1,6 +1,7 @@
 window.onload = function () {
   var table = document.getElementsByTagName("tr");
   var topHeaders = table.item(0).getElementsByTagName("th");
+  var cells = document.getElementsByTagName("td");
   var columnHeaders = [];
   var rowHeaders = [];
   var previous;
@@ -53,12 +54,24 @@ window.onload = function () {
   }
   
   
-  var unselect = function () {
-    var cells = document.getElementsByTagName("td");
-    for (var i = 0; i < cells.length; i++) {
-      if(cells.item(i).className === "selected") {
-        cells.item(i).className = "";
+  for (var i = 0; i < cells.length; i++){
+    cells.item(i).addEventListener('click', function () {
+      var cell = event.target;
+      if (previous !== cell) {
+        unselect();
       }
+      if (cell.className === "selected") {
+        cell.className = ""
+      } else {
+        cell.className = "selected";  
+      }
+      previous = cell;
+    },false);
+  }
+  
+  var unselect = function () {
+    for (var i = 0; i < cells.length; i++) {
+        cells.item(i).className = "";
     }
   };
 };
