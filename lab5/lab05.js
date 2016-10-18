@@ -3,6 +3,7 @@ window.onload = function () {
   var topHeaders = table.item(0).getElementsByTagName("th");
   var cells = document.getElementsByTagName("td");
   var previous;
+  var perviousValue;
   
   for (var i = 1; i < topHeaders.length; i++) {
     topHeaders.item(i).tabIndex = i;
@@ -34,25 +35,32 @@ window.onload = function () {
   for (var i = 0; i < cells.length; i++) {
     cells.item(i).onclick = function () {
       var cell = event.target;
-      clearCheck(cell);
-      cellChange(cell);
-      var inputBox = cell.getElementsByTagName('input');
-      if(cell.childElementCount == 0){ 
-        var input = document.createElement('input');
-        input.type = 'text';
-        input.value = cell.textContent;
-        cell.textContent = '';
-        cell.appendChild(input);
-        input.focus();
-        
-        inputBox.item(0).onkeypress = function (e) {
-          if (e.keyCode === 13) {
+      if (event.target.tagName != "INPUT") {
+        clearCheck(cell);
+        cellChange(cell);
+        var inputBox = cell.getElementsByTagName('input');
+        if(cell.childElementCount == 0){
+          var input = document.createElement('input');
+          input.type = 'text';
+          input.value = cell.textContent;
+          cell.textContent = '';
+          cell.appendChild(input);
+          previousValue = input.value;
+          input.focus();
+          inputBox.item(0).onkeypress = function (e) {
+            if (e.keyCode === 13) {
+              event.target.parentNode.className = '';
+              event.target.parentNode.textContent = event.target.value;
+            }
+          };
+          inputBox.item(0).onblur = function () {
             event.target.parentNode.className = '';
-            event.target.parentNode.textContent = event.target.value;
-          }
-        };
+            event.target.parentNode.textContent = previousValue;
+          };
+        }
+      } else {
+        previous = event.target;
       }
-      previous = event.target;
     };
   }
   
