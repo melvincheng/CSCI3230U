@@ -2,8 +2,33 @@
   background-color: #000070;
   font-size: 24pt;
   color: white;
+  display: flex;
+  align-items: center;
+  max-height: 100px;
 }
 
-#header {
-  background-color: black;
+.pageHeader img {
+  max-height: 10%;
+  max-width: 10%;
+}
+
+.navigation {
+  
+}
+.navigation li{
+  display: table-cell;
+}
+
+.navigation li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #f0f0ff;
+}
+
+.header {
+  
+}
+
+.body {
+  
 }
