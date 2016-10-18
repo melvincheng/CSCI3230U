@@ -21,37 +21,38 @@
           </nav>
         </div>
       </header>
-      <div>
+      <div id="comments">
+        <div id="commentLabel">Comments:</div>
         <section>
-          <header>Title:</header>
-          <div>Interesting</div>
-          <header>Date:</header>
-          <div>2016-10-21</div>
-          <header>Comment:</header>
-          <div>Chess seems very interesting. I think I will try it some day.</div>
-          <header>Author:</header>
-          <div>John Smith</div>
+          <div class="commentHeader">
+            <div>Interesting</div>
+            <div>John Smith</div>
+            <div>2016-10-21</div>
+          </div>
+          <div class="commentBody">Chess seems very interesting. I think I will try it some day.</div>
         </section>
-        <br />
         <section>
-          <header>Title:</header>
-          <div>Pretty nice</div>
-          <header>Date:</header>
-          <div>2016-10-10</div>
-          <header>Comment:</header>
-          <div>This site looks pretty nice. I give it a 11/10</div>
-          <header>Author:</header>
-          <div>Emma Hoffmann</div>
+          <div class="commentHeader">
+            <div>Pretty nice</div>
+            <div>Emma Hoffmann</div>
+            <div>2016-10-10</div>
+          </div>
+          <div class="commentBody">This site looks pretty nice. I give it a 11/10</div>
         </section>
-        <br />
       </div>
-      <form action="comments.html" method="post">
-        Title: <input type = "text" name="title"/>
-        Comment: <textarea name = "comment" cols = "50" rows = "10"></textarea>
-        Date: <input type = "date" name="date"/>
-        Name: <input type = "text" name="author"/>
-        <button type="submit" name="submitBtn">Submit</button>
-      </form>
+      <div id="commentsForm">
+        <div>Leave a comment:</div>
+        <form action="comments.html" method="post">
+          <label>Title:</label>
+          <input type = "text" name="title"/>
+          <label>Name:</label>
+          <input type = "text" name="author"/>
+          <label>Date:</label>
+          <input type = "text" name="date"/>
+          <textarea name = "comment" rows = "10"></textarea>
+          <button type="submit" name="submitBtn">Submit</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
