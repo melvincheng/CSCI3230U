@@ -1,0 +1,2427 @@
+Midterm sheet
+
+
+Sample 2 - index.html
+html{
+	<!DOCTYPE html>
+	<html>
+	    <head>
+	        <meta charset="utf-8" />
+	        <meta name="viewport" content="width=device-width, initial-scale=1" />
+	        <title>Chameleon Photography</title>
+	        <link rel="icon" type="image/png" href="images/logo.png" alt="icon" />
+	        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Tangerine' type='text/css'>
+	        <link rel="stylesheet" href="styles/main.css" type="text/css" />
+	        <link rel="stylesheet" href="styles/tablet.css" type="text/css" media="screen and (min-width: 701px) and (max-width: 800px)"/>
+	        <link rel="stylesheet" href="styles/phone.css" type="text/css" media="screen and (max-width: 700px)"/>
+	        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	        <script src="scripts/main.js"></script>
+	    </head>
+	    <body>
+	        <div id="wrapper">
+	            <header>
+	                <div id="logo">
+	                    <a href="#">
+	                        <img src="images/logo.png" alt="Chameleon Photography Logo" />
+	                        <p>Chameleon Photography</p>
+	                    </a>
+	                </div>
+	                <nav>
+	                    <a href="#" id="menu-icon">&#9776</a>
+	                    <ul>
+	                        <li><a href="#" class="active">Home</a></li>
+	                        <li><a href="#">Family Portraits</a></li>
+	                        <li><a href="#">Weddings</a></li>
+	                        <li><a href="#">Gallery</a></li>
+	                    </ul>
+	                </nav>
+	            </header>
+	            <div id="content">
+	                <article class="threecol">
+	                    <header>Family Portrait Sessions</header>
+	                    <img src="images/family_portrait.jpg" alt="family portraits" /><br />
+	                    <content>Want to capture those precious memories?  Our photographers can schedule on-site photography sessions at a location of your choosing.  We can even suggest a site nearby for you.</content>
+	                </article>
+	                <article class="threecol">
+	                    <header>Wedding Sessions</header>
+	                    <img src="images/wedding.jpg" alt="weddings" /><br />
+	                    <content>Tying the knot?  You'll find that our photographers have great, unique ideas for capturing your special day.  During the ceremony, they'll capture the moments unconspicuously.  After the ceremony, why not go to a special location, and take advantage of natural light and scenic backgrounds.</content>
+	                </article>
+	                <article class="threecol lastcol">
+	                    <header>Special Occasions</header>
+	                    <img src="images/special_occasions.jpg" alt="special occasions" /><br />
+	                    <content>Is there a once-in-a-lifetime event coming up?  Let us capture it in style, so that you don't have to worry about it.  Focus on your special day, and let us take care of the memories.</content>
+	                </article>
+	            </div>
+	            <footer>
+	                <section class="threecol">
+	                    <h3>Visit Our Stores</h3>
+	                    <ul>
+	                        <li><a href="#"><img src="images/social/amazon.png" alt="Amazon" /></a></li>
+	                        <li><a href="#"><img src="images/social/ebay.png" alt="eBay" /></a></li>
+	                    </ul>
+	                </section>
+	                <section class="threecol">
+	                    <h3>Contact</h3>
+	                    <p>
+	                        1245 Chameleon Way<br />
+	                        Vancouver, BC<br />
+	                        V6B 2D4<br />
+	                        604-123-4567
+	                    </p>
+	                </section>
+	                <section class="threecol lastcol">
+	                    <h3>Connect</h3>
+	                    <ul>
+	                        <li><a href="#"><img src="images/social/fb.png" alt="Facebook" /></a></li>
+	                        <li><a href="#"><img src="images/social/google+.png" alt="Google+" /></a></li>
+	                        <li><a href="#"><img src="images/social/twitter.png" alt="Twitter" /></a></li>
+	                        <li><a href="#"><img src="images/social/youtube.png" alt="YouTube" /></a></li>
+	                    </ul>
+	                </section>
+	            </footer>
+	            <footer class="copyright">
+	                &copy; Copyright - Chameleon Photography - 2015
+	            </footer>
+	        </div>
+	    </body>
+	</html>
+}
+
+Sample 2 - styles/main.css
+css {
+	.color-primary-0 { color: #B850A8 }	/* Main Primary color */
+	.color-primary-1 { color: #E9AEE0 }
+	.color-primary-2 { color: #D27AC4 }
+	.color-primary-3 { color: #A23391 }
+	.color-primary-4 { color: #8D177B }
+
+	.color-complement-0 { color: #D7F56A }	/* Main Complement color */
+	.color-complement-1 { color: #EEFCBC }
+	.color-complement-2 { color: #E2F890 }
+	.color-complement-3 { color: #BCDC45 }
+	.color-complement-4 { color: #9EC020 }
+
+	body {
+	    background-color: #f0f0f0;
+	    font-family: Verdana;
+	    font-size: 90%;
+	}
+	#wrapper {
+	    margin: 0 auto;
+	    max-width: 1020px;
+	    width: 99%;
+	    background: #f0f0f0;
+	    border: 1px solid #8D177B;
+	    border-radius: 2px;
+	    box-shadow: 0 0 10px 0px rgba(12, 3, 25, 0.8);
+	}
+	#wrapper section {
+	    padding: 5px;
+	}
+
+	/* the header, navigation bar */
+	body > div > header {
+	    background-color: #8D177B;
+	    padding: 5px;
+	    height: 130px;
+	}
+	#logo {
+	    float: left;
+	    text-align: center;
+	    margin-top: 20px;
+	    margin-left: 20px;
+	}
+	#logo a {
+	    text-align: center;
+	    text-decoration: none;    
+	}
+
+	#logo p {
+	    color: #f0f0f0;
+	    margin-top: 0;
+	    font-family: 'Tangerine', cursive;
+	    font-size: 28px;
+	}
+	#logo img {
+	    width: 60px;
+	    height: auto;
+	}
+	nav {
+	    float: right;
+	    margin-right: 20px;
+	    margin-top: 70px;
+	}
+	nav ul {
+	    list-style: none;
+	}
+	nav ul li {
+	    margin-left: 15px;
+	    padding-left: 0;
+	    display: inline-block;
+	}
+	nav ul li a {
+	    text-decoration: none;
+	    color: #f0f0f0;
+	    font-family: 'Tangerine', cursive;
+	    font-size: 160%;
+	    padding: 10px 10px 5px 10px;
+	}
+	#menu-icon {
+	    display: none;
+	    text-decoration: none;
+	    font-size: 200%;
+	    color: #f0f0f0;
+	    padding: 10px 10px 5px 10px;
+	}
+	nav ul li a.active, nav ul li a:hover {
+	    background-color: #A23391;
+	    border-radius: 5px;
+	}
+
+	/* sample photos */
+
+	/* main content */
+	#content {
+	    margin-top: 20px;
+	}
+	.threecol {
+	    float: left;
+	    width: 28%;
+	    margin-left: 1%;
+	    margin-right: 4%;
+	    margin-bottom: 20px;
+	    text-align: center;
+	}
+	article header {
+	    font-size: 200%;
+	    font-family: 'Tangerine', cursive;
+	}
+	.threecol img {
+	    max-width: 100%;
+	}
+	.lastcol {
+	    margin-right: 0;
+	}
+
+	/* footer */
+	body > div > footer {
+	    float: none;
+	    clear: both;
+	    background: #8D177B;
+	    padding: 5px;
+	    color: #ffffff;
+	    height: auto;
+	    overflow: hidden;
+	}
+	footer h3 {
+	    font-family: 'Tangerine', cursive;
+	    font-size: 200%;
+	    font-weight: normal;
+	}
+	footer p {
+	    font-family: Verdana;
+	    font-size: 90%;
+	}
+	footer section ul {
+	    list-style: none;
+	    margin-left: 0;
+	    padding-left: 0;
+	}
+	footer section ul li {
+	    margin-left: 0;
+	    padding-left: 0;
+	    display: inline-block;
+	    margin-right: 10px;
+	}
+	footer section img {
+	    width: 40px;
+	}
+	footer.copyright {
+	    background-color: #404040;
+	    color: #ffffff;
+	    font-family: 'Tangerine', cursive;
+	    font-size: 150%;
+	    text-align: center;
+	    padding: 20px;
+	    margin-top: 0;
+	}
+}
+
+Sample 2 - styles/phone.css
+css{
+	#wrapper {
+	    margin: 0;
+	    width: 100%;
+	    background: #f0f0f0;
+	    border: 0;
+	    border-radius: 0;
+	    box-shadow: 0 0 0 0;
+	}
+	.threecol {
+	    clear: both;
+	    float: none;
+	    width: 100%;
+	    margin-left: 0;
+	}
+	header nav ul {
+	    display: none;
+	    position: absolute;
+	    right: 20px;
+	    top: 100px;
+	    text-align: center;
+	    margin-left: 0;
+	    padding-left: 0;
+	    background-color: #8D177B;
+	    border-radius: 5px;
+	    box-shadow: 0 0 10px 0px rgba(12, 3, 25, 0.8);
+	}
+	header nav ul li {
+	    display: block;
+	    margin-top: 20px;
+	    margin-bottom: 20px;
+	    padding-right: 20px;
+	}
+	#menu-icon {
+	    display: block;
+	}
+	nav:hover ul {
+	    display: block;
+	}
+}
+
+Sample 2 - styles/tablet.css
+css{
+	#content .threecol {
+    width: 41%;
+    margin-left: 3%;
+	}
+	#content .lastcol {
+	    float: none;
+	    width: 100%;
+	    margin-left: 0;
+	}
+}
+
+Javascript sandbox - dom.html
+html{
+	<!DOCTYPE html>
+	<html>
+	  <head>
+	    <link rel="stylesheet"
+	          href="dom.css"
+	          type="text/css" />
+	    <script type="text/javascript"
+	            src="dom.js"></script>
+	  </head>
+	  <body>
+	    <ol id="coolPlaces">
+	      <li>Canada</li>
+	      <li>Ecuador</li>
+	      <li>Italy</li>
+	      <li>Japan
+	        <ul>
+	          <li>Tokyo</li>
+	          <li>Osaka</li>
+	        </ul>
+	      </li>
+	    </ol>
+	    <table>
+	      <thead>
+	        <tr>
+	          <th>SID</th>
+	          <th>Midterm</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	        <tr>
+	          <td>200000001</td>
+	          <td>45.5</td>
+	        </tr>
+	        <tr>
+	          <td>200000005</td>
+	          <td>67.0</td>
+	        </tr>
+	        <tr>
+	          <td>200000012</td>
+	          <td>64.75</td>
+	        </tr>
+	      </tbody>
+	    </table>
+	    <button id="btnParent">Parent</button>
+	    <button id="btnPrevSib">Prev Sibling</button>
+	    <button id="btnNextSib">Next Sibling</button>
+	    <button id="btnFirstChild">First Child</button>
+	    <button id="btnLastChild">Last Child</button>
+	    <br />
+
+	    <select id="lstVisibility">
+	      <option>block</option>
+	      <option>inline</option>
+	      <option>none</option>
+	    </select>
+	    
+	    <br />
+	    <input type="text" id="txtNewPlace" />
+	    <button id="btnAddPlace">Add New Place</button>
+	  </body>
+	</html>
+}
+
+Javascript sandbox - dom.css
+css{
+	.selected {
+	  background-color: lightBlue;
+	}
+}
+
+Javascript sandbox - dom.js
+js{
+	var selectedNode = document;
+
+	function selectNode(node) {
+	  node.className = 'selected';
+	  selectedNode = node;
+	  console.log('selected: ', selectedNode);
+	}
+	function deselectNode(node) {
+	  node.className = '';
+	}
+
+	window.onload = function () {
+	  selectNode(document);
+	  var btnParent = 
+	   document.getElementById('btnParent');
+	  btnParent.onclick = function () {
+	    if (selectedNode.parentNode) {
+	      deselectNode(selectedNode);
+	      selectNode(selectedNode.parentElement);
+	    }
+	  };
+	  var btnPrevSib = 
+	   document.getElementById('btnPrevSib');
+	  btnPrevSib.onclick = function () {
+	    if (selectedNode.previousSibling) {
+	      deselectNode(selectedNode);
+	      selectNode(selectedNode.previousSibling);
+	    }
+	  };
+	  var btnNextSib = 
+	   document.getElementById('btnNextSib');
+	  btnNextSib.onclick = function () {
+	    if (selectedNode.nextSibling) {
+	      deselectNode(selectedNode);
+	      selectNode(selectedNode.nextSibling);
+	    }
+	  };
+	  var btnFirstChild = 
+	   document.getElementById('btnFirstChild');
+	  btnFirstChild.onclick = function () {
+	    if (selectedNode.firstChild) {
+	      deselectNode(selectedNode);
+	      selectNode(selectedNode.firstChild);
+	    }
+	  };
+	  var btnLastChild = 
+	   document.getElementById('btnLastChild');
+	  btnLastChild.onclick = function () {
+	    if (selectedNode.lastChild) {
+	      deselectNode(selectedNode);
+	      selectNode(selectedNode.lastChild);
+	    }
+	  };
+	  var btnAddPlace = 
+	   document.getElementById('btnAddPlace');
+	  btnAddPlace.onclick = function () {
+	    var ol =  
+	      document.getElementById('coolPlaces');
+	    
+	    var txtNewPlace = 
+	      document.getElementById('txtNewPlace');
+	    var newPlace = txtNewPlace.value;
+	    
+	    // create a new DOM node
+	    var newListItem = 
+	        document.createElement('li');
+	    var content = 
+	        document.createTextNode(newPlace);
+	    newListItem.appendChild(content);
+	    ol.appendChild(newListItem);
+	  };
+	  
+	  var lstVisibility = 
+	    document.getElementById('lstVisibility');
+	  lstVisibility.onchange = function () {
+	    var list = 
+	    document.getElementById('lstVisibility');
+	    var selectedIndex = list.selectedIndex;
+	    var visibility = list.options[selectedIndex].text;
+	    
+	    selectedNode.style.display = visibility;
+	  };
+	  
+	};
+}
+
+Javascript sandbox - event.js
+js{
+	window.onload = function () {
+	  var regButton = 
+	      document.getElementById('reg');
+
+	  regButton.onclick = function () {
+	    console.log('The button was clicked');
+	  };
+	  
+	  var countrySelect = 
+	      document.getElementById('country');
+	  
+	  countrySelect.onchange = function () {
+	    console.log('selected a country');
+	    var index = this.selectedIndex;
+	    var country = this.options[index];
+	    console.log('country:', country.text);
+	  };
+	  
+	  var form =
+	      document.getElementById('registerForm');
+	  form.onsubmit = function () {
+	    console.log('form submitted?');
+	    return false;
+	  };
+	};
+}
+
+Javascript sandbox - sandbox.html
+html{
+	<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+	    <title>JavaScript Sandbox</title>
+	    <script type="text/javascript" 
+	            src="sandbox.js">
+	    </script>
+	    <script type="text/javascript"
+	            src="events.js"></script>
+	  </head>
+	  <body>
+	    <h3>Messages:</h3>
+	    <div id="messages">None yet</div>
+	    <div>What is your name?</div>
+	    <div id="output"></div>
+	    <input type="text" 
+	           id="name"
+	           value="Julie-Ann"/>
+	    <button id="reg">Fake Register</button>
+	    
+	    <form action="sandbox.html" 
+	          method="POST"
+	          id="registerForm">
+	      First name: 
+	      <input type="text" 
+	             name="firstName" />
+	      <br />
+	      
+	      Last name: 
+	      <input type="text" 
+	             name="lastName" />
+	      <br />
+
+	      <select id="country">
+	        <option>Canada</option>
+	        <option>USA</option>
+	        <option>Other</option>
+	      </select>
+	      
+	      <input type="submit" 
+	             value="Register" />
+	    </form>
+	    
+	  </body>
+	</html>
+}
+
+Javascript sandbox - sandbox.js
+js{
+	window.onload = function () {
+	  /* JavaScript */
+
+	  /* output */
+
+	  // tell the developer something
+	  console.log('I am not using alert!');
+
+	  // tell the user something
+	  // DHTML, DOM manipulation
+	  var messagesDiv = 
+	      document.getElementById('messages');
+	  messagesDiv.innerHTML = 'Hello!';
+
+	  /* input */
+	  var nameInput = 
+	      document.getElementById('name');
+	  console.log(nameInput.value);
+
+	  /* conditionals */
+	  var midtermMark = 67.5;
+	  var letterGrade = '';
+	  if (midtermMark < 50) {
+	    letterGrade = 'F';
+	  } else if (midtermMark < 60) {
+	    letterGrade = 'D';
+	  } else {
+	    letterGrade = 'A';
+	  }
+	  console.log('letterGrade = ' + letterGrade);
+
+	  var choice = 2;
+	  switch (choice) {
+	    case 0:
+	      console.log('run the program');
+	      break;
+	    case 1:
+	      console.log('compile the program');
+	      break;
+	    default:
+	      console.log('exit');
+	  }
+
+	  /* loops */
+	  var count = 3;
+	  while (count > 0) {
+	    console.log(count);
+	    count--;
+	  }
+
+	  var grades = [67.5, 91.0, 43.0, 55.25];
+	  var sum = 0;
+	  for (var i = 0; i < grades.length; i++) {
+	    sum += grades[i];
+	  }
+	  console.log('Average: ' + 
+	              sum/grades.length);
+
+	  function isPrime(number) {
+	    for (var div = 2; div <= number/2; div++) {
+	      if ((number % div) == 0) {
+	        return false;
+	      }
+	    }
+	    return true;
+	  }
+	  console.log('is 4 prime? ' + isPrime(4));
+	  console.log('is 7 prime? ' + isPrime(7));
+
+	  var myPrimeChecker = function (number) {
+	    for (var div = 2; div <= number/2; div++) {
+	      if ((number % div) == 0) {
+	        return false;
+	      }
+	    }
+	    return true;
+	  };
+	  console.log('is 4 prime? ' + 
+	              myPrimeChecker(4));
+	  console.log('myPrimeChecker = ' + 
+	              myPrimeChecker)
+
+	  function fibonacci(n) {
+	    if (n == 0 || n == 1) {
+	      return n;
+	    }
+	    return fibonacci(n-1) + fibonacci(n-2);
+	  }
+
+	  function ascending(val1, val2) {
+	    return val1 - val2;
+	  }
+
+	  var finalMarks = 
+	      [89, 71.5, 43, 66.25, 16];
+	  var sortedMarks = 
+	      finalMarks.sort(ascending);
+	  console.log(sortedMarks);
+
+	  var jsPattern = new RegExp('javascript');
+	  var sentence = 'I like javascript?';
+	  if (jsPattern.test(sentence)) {
+	    console.log('The word was found!');
+	    var match = jsPattern.exec(sentence);
+	    console.log('match: ' + match);
+	  }
+
+	  var costPattern = /\$[0-9]+/;
+	  var comment = 
+	      'I bought this for $100 at Bobmart';
+	  var fixedComment = comment.replace(costPattern, '$...');
+	  console.log(fixedComment);
+
+	  var phonePattern = /\d{3}-\d{3}-\d{4}/;
+	  var text = 'Call me at 905-721-8668 right away!';
+	  var phone = phonePattern.exec(text);
+	  console.log('Phone: ' + phone);
+
+	  function TextField(name) {
+	    this.size = 25;
+	    this.name = name;
+
+	    this.render = function() {
+	      var output = '<input type="text" ';
+	      output += 'name="' + this.name + '" ';
+	      output += 'size="' + this.size + '" ';
+	      output += '/>';
+	      return output;
+	    };
+	  }
+	  firstNameField = 
+	    new TextField('firstName');
+	  console.log('size: ' + 
+	              firstNameField.size);
+	};
+}
+
+03_Bootstrap - bootstrap.html
+html{
+	<!DOCTYPE html>
+	<html lang="en">
+	    <head>
+	        <title>Bootstrap</title>
+
+	        <meta charset="utf-8">
+	        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	        
+	  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	  
+	        <link rel="stylesheet" href="main.css" />
+	        
+	        <style type="text/css">
+	            .bd-pageheader {
+	                padding: 2rem .9375rem;
+	                margin-bottom: 1.5rem;
+	                color: #cdbfe3;
+	                text-align: center;
+	                background-color: #563d7c;
+	            }
+	        </style>
+
+	    </head>
+	    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+	        <div class="navbar-toggleable-xs" id="bd-main-nav">
+				<nav class="navbar navbar-inverse navbar-fixed-top">
+				  <div class="container-fluid">
+					<div class="navbar-header">
+					  <a class="navbar-brand" href="#">Bootstrap Example</a>
+					</div>
+					<ul class="nav navbar-nav">
+					  <li class="active"><a href="#columns">Columns</a></li>
+					  <li><a href="#tabs">Tabs</a></li>
+					  <li><a href="#progress">Progress Bars</a></li> 
+					  <li><a href="#tables">Tables</a></li> 
+					  <li><a href="#forms">Forms</a></li> 
+					</ul>
+				  </div>
+				</nav>
+			</div>
+
+	        <div class="bd-pageheader text-xs-center text-sm-left" style="margin-top: 50px" id="columns">
+	              <div class="container">
+	                <h1>Columns</h1>
+	                <p class="lead">
+	                  Easily add column layouts to any page.  For constant
+					  column sizes, simply use any divisor of 12 for the column width.
+	                </p>
+	              </div>
+	        </div>
+	        
+	        <div class="container">
+	          <!-- Example row of columns -->
+	          <div class="row">
+	            <div class="col-md-4">
+	              <h2>Heading 1</h2>
+				  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales magna sed felis consequat vulputate. Suspendisse at pharetra tortor, finibus egestas metus. Praesent eleifend velit ex, sit amet elementum felis congue non. Vivamus maximus sit amet leo rutrum tempor. Fusce hendrerit sem sit amet magna cursus feugiat. Vestibulum efficitur massa nec ullamcorper ullamcorper. Integer pellentesque ipsum enim, a aliquam tortor varius lacinia. Maecenas ut fringilla leo. Mauris blandit ex elit, ac efficitur justo ultricies non. Donec facilisis ante quis orci tristique, at dignissim eros egestas. Fusce nec eleifend quam.
+	              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+	            </div>
+	            <div class="col-md-4">
+	              <h2>Heading 2</h2>
+	              <p>Nulla metus felis, faucibus eu nibh eget, venenatis faucibus nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur sit amet elit a sem varius feugiat. Suspendisse lacinia ante scelerisque ante suscipit maximus. Curabitur ac nunc posuere, volutpat turpis consequat, cursus purus. Aliquam sapien lectus, lobortis quis libero in, accumsan dapibus neque. Phasellus et sapien vel nisi aliquam tempor.</p>
+	              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+	           </div>
+	            <div class="col-md-4">
+	              <h2>Heading 3</h2>
+	              <p>Phasellus molestie hendrerit sollicitudin. Vivamus risus neque, viverra nec auctor vitae, venenatis nec sem. Sed enim diam, placerat ut lorem a, sollicitudin pharetra erat. Sed ac lectus fermentum, molestie mauris at, condimentum metus. Vivamus condimentum ante quis nulla consectetur, eget interdum turpis maximus. Vivamus in enim sed libero porttitor fringilla. Vestibulum elementum justo urna, et bibendum eros ultrices quis. Fusce et euismod lacus, molestie laoreet lacus. Vivamus ut leo semper leo gravida placerat. Maecenas nec euismod leo. Vestibulum neque magna, pulvinar id augue non, fringilla convallis metus. Cras ultricies, ligula ac mattis fringilla, velit sem fringilla est, ut interdum urna quam ut orci.</p>
+	              <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+	            </div>
+	          </div>
+			</div>
+			
+	        <div class="bd-pageheader text-xs-center text-sm-left" id="tabs">
+	              <div class="container">
+	                <h1>Tabs</h1>
+	                <p class="lead">
+	                  Adding tabs is as simple as giving the class 'nav-tabs'.  Adding navigation between the tabs, however, will require JavaScript.
+	                </p>
+	              </div>
+	        </div>		
+			<div class="container">
+			<ul class="nav nav-tabs">
+			  <li class="active"><a data-toggle="tab" href="#generalTab">General</a></li>
+			  <li><a data-toggle="tab" href="#technicalTab">Technical</a></li>
+			  <li><a data-toggle="tab" href="#usabilityTab">Usability</a></li>
+			</ul>
+
+			<div class="tab-content">
+			  <div id="generalTab" class="tab-pane fade in active">
+				<h3>General</h3>
+				<div class="lead">
+				  <p>This is an example of using tabs.  You can click these tabs, and the appropriate content section is shown.  Click the other tabs to find out more information about how to use tabs.</p>
+				  <p>Vivamus tincidunt ex quis lacus viverra, ac pretium tortor feugiat. Aenean id leo tincidunt, finibus nibh gravida, consectetur mauris. Nam volutpat, nunc a interdum varius, lorem lacus fermentum diam, consectetur suscipit enim lectus hendrerit ipsum. Quisque nec orci velit. Aenean feugiat nibh nec arcu luctus, vitae finibus libero scelerisque. Mauris eu sem in arcu fringilla suscipit. Aenean eu purus a lectus pellentesque rhoncus eu ut ipsum. Donec id vestibulum augue, gravida congue felis. In ut ante augue. Mauris eget mauris non odio ornare accumsan. Aenean tempor arcu vel sem viverra, eget scelerisque risus pellentesque. Integer sed nunc volutpat, iaculis neque ac, pretium sem.</p>
+				</div>
+			  </div>
+			  <div id="technicalTab" class="tab-pane fade">
+				<h3>Technical</h3>
+				<div class="lead">
+				  <p>To link the tabs, above, to the content sections, below, use the id of the content section in the href of the tab link.</p>
+				  <p>Phasellus euismod, risus a porttitor fringilla, nisl leo finibus nisl, nec consectetur quam arcu vel lorem. Duis eget lobortis elit. Suspendisse posuere a nibh eleifend dignissim. Vivamus cursus lorem eget posuere eleifend. Maecenas sit amet nulla sed nisi rutrum laoreet ac eget enim. Integer sapien elit, congue vitae odio vitae, fermentum accumsan lorem. Pellentesque tincidunt aliquet leo nec tempus. Mauris ante ligula, eleifend vitae nunc in, ultricies sollicitudin nisi. Nunc feugiat sodales nisl, convallis rhoncus sem fringilla eget. Maecenas sem nunc, lacinia feugiat elit ut, fermentum condimentum metus. Donec at tempor erat. Nullam eget ultrices lacus. Nulla sit amet vestibulum tellus. Sed fringilla, enim eget congue molestie, nulla odio molestie nunc, eu aliquet nunc nisi sed felis. Sed vestibulum posuere dui, vel accumsan orci iaculis non. Suspendisse gravida tincidunt fringilla.</p>
+				</div>
+			  </div>
+			  <div id="usabilityTab" class="tab-pane fade">
+				<h3>Usability</h3>
+				<div class="lead">
+				  <p>Tabs make a huge data entry task less stressful for the user, as you can walk them through it step by step.  Too many form fields can easily be overwhelming.  Non-form data can also use tabs, e.g. for controls for an interactive web application.</p>
+				  <p>Aenean pretium nunc rhoncus justo tincidunt facilisis. Pellentesque consectetur a eros hendrerit hendrerit. Nunc orci sem, varius a semper sed, laoreet vel sapien. In accumsan malesuada felis euismod tincidunt. Curabitur eu rhoncus neque, at dapibus elit. Sed consequat turpis sed lectus pretium, in vehicula felis pretium. Vivamus scelerisque aliquam ipsum quis pellentesque. Suspendisse potenti. Nulla eu arcu laoreet, pulvinar odio vel, eleifend dui. Fusce lorem dolor, varius vel aliquet nec, faucibus eget enim. Nullam a libero molestie, porta velit lobortis, pellentesque ante. In efficitur rhoncus sapien vitae sollicitudin. Etiam efficitur maximus ultricies. Aliquam a felis ac odio convallis pulvinar. Fusce imperdiet arcu purus, quis rutrum turpis condimentum vel.</p>
+				</div>
+			  </div>
+			 </div>
+			</div>
+
+	        <div class="bd-pageheader text-xs-center text-sm-left" id="progress">
+	              <div class="container">
+	                <h1>Progress Bars</h1>
+	                <p class="lead">
+	                  A progress bar might be a good way to show the user how much progress they have made performing some large action, e.g. registration.
+	                </p>
+	              </div>
+	        </div>
+			<div class="progress">
+			  <div class="progress-bar" role="progressbar" aria-valuenow="50"
+			       aria-valuemin="0" aria-valuemax="100" style="width:50%">
+				<span>50% Complete</span>
+			  </div>
+			</div>
+			<div class="container">
+			  <div class="lead">
+			   <p>This is an example of using a progress meter.  You can change the styling, using DHTML (discussed later), to make it animated, or just use a static bar to show progress at each step.</p>
+			   <p>Vivamus tortor felis, viverra ac faucibus non, consequat eu massa. In sodales at sem vel efficitur. Suspendisse ante orci, rutrum vel arcu id, auctor ultricies tellus. Cras consectetur in mauris vel maximus. Nam ac diam non nisl commodo lacinia. Quisque pellentesque malesuada eros et posuere. Proin turpis tellus, scelerisque a urna quis, varius consectetur turpis.</p>
+			  </div>
+			</div>
+
+	        <div class="bd-pageheader text-xs-center text-sm-left" id="tables">
+	              <div class="container">
+	                <h1>Tables</h1>
+	                <p class="lead">
+	                  Tables can be very ugly is done incorrectly.  Bootstrap doesn't provide too many options, but those it does provide are professional and aesthetically pleasing.
+	                </p>
+	              </div>
+	        </div>
+			<div class="table-responsive">
+			 <table class="table table-striped table-hover">
+			  <thead>
+			    <tr>
+				  <th>Month</th>
+				  <th>Unit Cost</th>
+				  <th>Unit Price</th>
+				  <th>Units Sold</th>
+				  <th>Profit</th>
+				</tr>
+			  </thead>
+			  <tbody class="">
+			    <tr>
+				  <td>August</td>
+				  <td>$1.74</td>
+				  <td>$9.99</td>
+				  <td>12 603</td>
+				  <td>$103 974.75</td>
+				</tr>
+			    <tr>
+				  <td>July</td>
+				  <td>$1.72</td>
+				  <td>$9.99</td>
+				  <td>11 458</td>
+				  <td>$94 757.66</td>
+				</tr>
+			    <tr>
+				  <td>June</td>
+				  <td>$1.84</td>
+				  <td>$8.99</td>
+				  <td>12 947</td>
+				  <td>$92 571.05</td>
+				</tr>
+			    <tr>
+				  <td>May</td>
+				  <td>$1.93</td>
+				  <td>$8.99</td>
+				  <td>10 858</td>
+				  <td>$76 657.48</td>
+				</tr>
+			  </tbody>
+			 </table>
+			</div>
+			<div class="container">
+			  <p>Etiam volutpat, nisi quis porttitor venenatis, tortor magna congue turpis, ut accumsan tellus turpis sed massa. Donec at iaculis velit. Integer accumsan erat pretium turpis maximus semper. Maecenas erat diam, tincidunt eget egestas vel, finibus id arcu. Donec consectetur libero quis arcu tristique imperdiet. Vivamus sapien felis, laoreet in eleifend id, sagittis sed nibh. Fusce in risus tellus. Sed eu ante mollis ante iaculis hendrerit ac id eros. Nullam a consectetur magna, ac aliquam odio. Donec maximus, dolor a condimentum venenatis, magna arcu pharetra mauris, ac dapibus purus ante sed augue. Aenean pellentesque maximus ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris ultricies tortor vel eleifend rutrum. Nullam quis tortor mi.</p>
+			</div>
+			
+	        <div class="bd-pageheader text-xs-center text-sm-left" id="forms">
+	              <div class="container">
+	                <h1>Forms</h1>
+	                <p class="lead">
+	                  There is a lot you can do with forms.  Aside from Bootstrap taking care of the alignment, it can also provide some styles to highlight certain fields (e.g. required vs. optional, fields with errors).
+	                </p>
+	              </div>
+	        </div>
+
+			<div id="myModal" class="modal fade" role="dialog">
+			  <div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h3 class="modal-title">GNU GENERAL PUBLIC LICENSE</h3>
+				  </div>
+				  <div class="modal-body">
+					<p style="text-align: center;">Version 3, 29 June 2007</p>
+
+					<p>Copyright &copy; 2007 Free Software Foundation, Inc.
+					 &lt;<a href="http://fsf.org/">http://fsf.org/</a>&gt;</p><p>
+					 Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.</p>
+					<p>The GNU General Public License is a free, copyleft license for software and other kinds of works.</p>
+
+					<p>The licenses for most software and other practical works are designed to take away your freedom to share and change the works.  By contrast,
+					the GNU General Public License is intended to guarantee your freedom to	share and change all versions of a program--to make sure it remains free
+					software for all its users.  We, the Free Software Foundation, use the GNU General Public License for most of our software; it applies also to
+					any other work released this way by its authors.  You can apply it to your programs, too.</p>
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				  </div>
+				</div>
+
+			  </div>
+			</div>
+
+			<form class="form-horizontal" role="form">
+			  <div class="form-group">
+			    <label class="sr-only col-sm-2 control-label">Hidden label</label>
+				<div class="col-sm-3">
+					<button type="button" class="form-control input-lg btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">View License</button>
+				</div>
+			  </div>
+			  <div class="form-group">
+				<label class="col-sm-2 control-label">Focused</label>
+				<div class="col-sm-10">
+				  <input class="form-control" id="focusedInput" type="text" value="Click to focus">
+				</div>
+			  </div>
+			  <div class="form-group">
+				<label for="inputPassword" class="col-sm-2 control-label">Disabled</label>
+				<div class="col-sm-10">
+				  <input class="form-control" id="disabledInput" type="text" disabled>
+				</div>
+			  </div>
+			  <fieldset disabled>
+				<div class="form-group">
+				  <label for="disabledTextInput" class="col-sm-2 control-label">Fieldset disabled</label>
+				  <div class="col-sm-10">
+					<input type="text" id="disabledTextInput" class="form-control">
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label for="disabledSelect" class="col-sm-2 control-label"></label>
+				  <div class="col-sm-10">
+					<select id="disabledSelect" class="form-control">
+					  <option>Disabled select</option>
+					</select>
+				  </div>
+				</div>
+			  </fieldset>
+			  <div class="form-group has-success has-feedback">
+				<label class="col-sm-2 control-label" for="inputSuccess">
+				Input with success and icon</label>
+				<div class="col-sm-10">
+				  <input type="text" class="form-control" id="inputSuccess">
+				  <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+				</div>
+			  </div>
+			  <div class="form-group has-warning has-feedback">
+				<label class="col-sm-2 control-label" for="inputWarning">
+				Input with warning and icon</label>
+				<div class="col-sm-10">
+				  <input type="text" class="form-control" id="inputWarning">
+				  <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
+				</div>
+			  </div>
+			  <div class="form-group has-error has-feedback">
+				<label class="col-sm-2 control-label" for="inputError">
+				Input with error and icon</label>
+				<div class="col-sm-10">
+				  <input type="text" class="form-control" id="inputError">
+				  <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+				</div>
+			  </div>
+			</form>
+			  
+	        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+			<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	    </body>
+	</html>
+}
+
+03_Bootstrap - bootstrap_basics.html
+html{
+	<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+	    <title>Document Title</title>
+	    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <link rel="stylesheet" 
+	          href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	  </head>
+	  <body>
+	    <h1>Heading</h1>
+	    <p>This is a paragraph of text.</p>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	  </body>
+	</html>
+}
+
+03_Bootstrap - bootstrap_container.html
+html{
+	<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+	    <title>Document Title</title>
+	    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	    <link rel="stylesheet" 
+	          href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<style type="text/css">
+		  div {
+		    background-color: #9090E0;
+		  }
+		</style>
+	  </head>
+	  <body>
+		<div>
+			<h1>Heading</h1>
+			<p>This is a paragraph of text.</p>
+		</div>
+		<div class="container-fluid">
+			<h1>Heading</h1>
+			<p>This is a paragraph of text.</p>
+		</div>
+		<div class="container">
+			<h1>Heading</h1>
+			<p>This is a paragraph of text.</p>
+		</div>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		
+	  </body>
+	</html>
+}
+
+03_Bootstrap - main.css
+css{
+	.red {
+    background: #FFD0D0;
+	}
+	.green {
+	    background: #D0FFD0;    
+	}
+	.blue {
+	    background: #D0D0FF;
+	}
+}
+
+jquery_sandbox - jquery_events.html
+html{
+	<!DOCTYPE html>
+	<html>
+	  <head>
+	    <title>jQuery Events</title>
+	    <script type="text/javascript" 
+	        src="http://code.jquery.com/jquery-latest.min.js">
+	    </script>
+	    <script type="text/javascript"
+	            src="jquery_events.js"></script>
+	  </head>
+	  <body>
+	    <form method="POST">
+	      <input id="username" type="text" />
+	      
+	      <br />
+	      
+	      <input id="password" type="password" />
+	      
+	      <select id="country">
+	        <option>Canada</option>
+	        <option>USA</option>
+	        <option>I'm too lazy</option>
+	      </select>
+	      
+	      <br />
+	      
+	      <select id="province">
+	      
+	      </select>
+	      
+	      <br />
+	      
+	      <button id="register">
+	        Register
+	      </button>
+	    </form>
+	  </body>
+	</html>
+}
+
+jquery_sandbox - jquery_events.js
+js{
+	var provinces = {Canada: ['Alberta', 'BC',
+	                          'Ontario'],
+	                 USA: ['Alabama', 'Alaska', 
+	                       'Arkansas']};
+
+	$(document).ready(function () {
+	  updateProvinces();
+	  
+	  $('#country').change(function () {
+	    updateProvinces();
+	  });
+	  
+	  $('button#register').click(function () {
+	    console.log('register button clicked');
+	  });
+
+	  $('button#register').dblclick(function () {
+	    console.log('register button double clicked');
+	  });
+	  
+	  $('button#register').toggle(function () {
+	    console.log('button toggled on');
+	  }, function () {
+	    console.log('button toggled off');
+	  });
+	  
+	  $('form').submit(function () {
+	    console.log('form submitted');
+	    return false;
+	  });
+	  
+	  $('#username').mouseenter(function () {
+	    console.log('mouse in text field!');
+	  });
+	  $('#username').mouseleave(function () {
+	    console.log('mouse out of text field');
+	  });
+	  $('#username').focus(function () {
+	    console.log('text field focus');
+	  });
+	  $('#username').change(function () {
+	    console.log('text field value change');
+	  });
+	  $('#username').select(function () {
+	    console.log('text field selection');
+	  });
+	});
+
+	function updateProvinces() {
+	  var country = $('#country').val();
+	  var provs = provinces[country];
+	  var content = '';
+	  $.each(provs, 
+	         function (index, value) {
+	    content += '<option>' + 
+	               value + 
+	               '</option>';
+	  });
+	  $('#province').html(content);
+	}
+}
+
+lab1 - lab1.html
+html{
+	<!DOCTYPE html>
+	<html>
+	  <head>
+	    <title>CSCI 3230U Course Website</title>
+		<link type="text/css" rel="stylesheet" href="lab1b.css" />
+	  </head>
+	  <body>
+	    <div id="header">
+		  <img src="images/logo.jpg" alt="UOIT Logo" />
+		  <h1>CSCI 3230U</h1>
+		  <a href="login.php">Log In</a>
+		</div>
+		
+	    <nav id="navbar">
+		  <ul>
+		    <li>Course Outline</li>
+		    <li>Lecture Notes</li>
+		    <li>Labs</li>
+		    <li>Assignments</li>
+		    <li>Project</li>
+		    <li>Grades</li>
+		  </ul>
+		</nav>
+		
+		<div id="chat">
+		  Chat
+		  <img src="images/arrow_up.png" alt="open chat window" />
+		</div>
+		
+		<section id="content">
+		  <p>Suspendisse volutpat quis velit a mattis. Fusce enim risus, tempor eu vestibulum et, eleifend sit amet urna. Ut scelerisque dui nulla, sit amet pulvinar justo vehicula id. Sed sit amet libero eu orci dignissim blandit sed venenatis neque. Integer eros augue, dapibus sit amet nunc id, vulputate congue odio. In commodo vel lacus sed luctus. Suspendisse tempus lacus malesuada odio auctor luctus. Etiam accumsan ornare placerat. Duis commodo nulla hendrerit magna mattis tempus. Integer consectetur, orci non lacinia viverra, lacus magna dignissim mauris, consectetur tristique quam magna id lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce a rutrum enim, sed vestibulum elit. Phasellus scelerisque lectus magna, vulputate porta dolor egestas ut. Donec justo mauris, commodo nec tortor et, aliquet volutpat diam.</p>
+	      <p>Nam molestie velit et urna interdum condimentum. Nam ut porttitor ligula. Pellentesque pellentesque ligula scelerisque, venenatis leo quis, porttitor erat. Vivamus lacinia varius magna, et lobortis sapien aliquam in. Vestibulum eget nibh et quam dictum feugiat. Quisque vitae nisi neque. Aliquam faucibus nibh ut neque egestas, et fringilla velit aliquam. Maecenas sed sodales est. Duis nulla massa, accumsan id pulvinar sit amet, auctor ac odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc lobortis nunc arcu, quis lobortis arcu mattis ut. Pellentesque sit amet neque ullamcorper, pretium augue sit amet, feugiat ipsum. Sed vehicula interdum diam, at mattis tortor mattis id. Praesent dapibus iaculis est.</p>
+	      <p>Sed lacus risus, blandit in vestibulum et, condimentum sit amet enim. Donec eget hendrerit metus. Mauris elementum tempus augue, eget tempus ante elementum sit amet. Mauris et nunc mattis, iaculis ante blandit, ornare lacus. In a tempus lorem. Pellentesque vel dolor semper, venenatis libero sit amet, rhoncus libero. Curabitur fringilla pharetra nibh, non euismod sem fermentum eget.</p>
+	      <p>In fermentum interdum leo, ac faucibus enim ultrices vel. Nullam a nulla sed elit ultricies convallis. Donec sodales elit id pretium mattis. Donec convallis mattis condimentum. Maecenas aliquam, mi id aliquet eleifend, est purus feugiat orci, ac aliquet ipsum purus eget ipsum. Mauris pretium nulla ut tortor ultricies ornare. Phasellus ac lectus sollicitudin, tincidunt turpis in, congue lorem. Curabitur nibh ipsum, varius vitae enim vitae, malesuada hendrerit ante. Donec pulvinar nec lectus vel ultricies. Morbi cursus metus metus, ut ultricies velit laoreet eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed egestas eu est nec fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In hac habitasse platea dictumst. Cras id hendrerit nunc, at venenatis odio.</p>
+	      <p>Nam mi orci, posuere facilisis tristique iaculis, laoreet dictum sapien. Vestibulum at varius velit. Nullam eu mauris sit amet odio volutpat porttitor ut nec sapien. Morbi ut arcu semper, molestie quam id, ullamcorper nibh. Integer sollicitudin arcu id urna posuere feugiat. Etiam luctus nibh ut condimentum commodo. Pellentesque quis risus non est cursus laoreet ac a dui. Proin augue risus, ornare a euismod sit amet, ullamcorper vitae mi. Nam eu justo laoreet, ullamcorper nisl vitae, placerat neque. Proin venenatis massa sit amet tortor rutrum suscipit. Proin tortor velit, lacinia fermentum ante imperdiet, dapibus gravida tortor. Nulla metus diam, rutrum eu semper ac, faucibus vitae nisi. Suspendisse condimentum nisl nunc, nec elementum est convallis in. Aliquam erat volutpat. Suspendisse fermentum volutpat tellus, sed faucibus diam ultrices in.</p>
+		</section>
+	  </body>
+	</html>
+}
+
+lab1 - lab1b.css
+css{
+	#header {
+	    display: table-row;
+	}
+
+	#header img, h1, a{
+	    display: table-cell;
+	}
+
+	#header img{
+	    height: 57px;
+	    width: 150px;
+	    float: left;
+	}
+
+	#header h1{
+	    font-size: 300%;
+	    width: 100%;
+	    text-align: center;
+	    margin: 0 auto 0 auto;
+	    
+	}
+
+	#header a {
+	    font-family: sans-serif;
+	    background-color: darkblue;
+	    text-align: center;
+	    padding: 10px 10px 0 10px;
+	    width: 100px;
+	    height: 30px;
+	    border-radius: 10px;
+	    color: white;
+	    text-decoration: none;
+	    float: right;
+	}
+
+	#navbar{
+	    float: left;
+	}
+
+	#navbar li {
+	    font-family: sans-serif;
+	    background-color: darkblue;
+	    list-style: none;
+	    width: 200px;
+	    height: 20px;
+	    padding: 5px;
+	    border-radius: 10px;
+	    color: white;
+	    text-align: center;
+	    margin: 10px;
+	}
+
+	#chat{
+	    position: fixed;
+	    bottom: 0;
+	    right: 0;
+	    text-align: center;
+	    width: 100px;
+	    height: 25px;
+	    border-color: black;
+	    border-style: solid;
+	    background-color: white;
+	}
+
+	#chat img{
+	    background: white;
+	    width: 20px;
+	}
+
+	#content{
+	    width: 50%;
+	    display: inline-block;
+	}
+}
+
+lab2 - lab2.html
+html{
+	<!DOCTYPE html>
+	<html>
+	  <head>
+	    <title>CSCI 3230U Course Website</title>
+	    <link type="text/css" rel="stylesheet" href="lab2.css" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="bootstrap.min.css" />
+	    <script src="jquery.min.js">
+	    </script>
+	    <script src="bootstrap.min.js">
+	    </script>
+	  </head>
+	  <body>
+	    <div id="header" class="row">
+	      <div class="col-xs-8 col-sm-9 col-sm-offset-1">
+	        <img src="images/logo.jpg" alt="UOIT Logo" />
+	      </div>
+	      <div class="col-xs-4 col-sm-2">
+	        <a href="login">Log In</a>
+	      </div>
+	    </div>
+	      
+	    <div id="chat">
+	      Chat
+	      <img src="images/arrow_up.png" alt="open chat window" />
+	    </div>
+	    
+	    <nav class="nav navbar-default">
+	      <div class="container-fluid">
+	        <div class="navbar-header">
+	          <a class="navbar-brand" href="#">CSCI 3230u</a>
+	        </div>
+	        <ul class="nav navbar-nav">
+	          <li class="active"><a href="#">Course Outline</a></li>
+	          <li><a href="#">Lecture Notes</a></li>
+	          <li class="dropdown">
+	            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Assessments<span class="caret"></span></a>
+	            <ul class="dropdown-menu">
+	              <li><a href="#">Labs</a></li>
+	              <li class="divider"></li>
+	              <li><a href="#">Assignments</a></li>
+	              <li class="divider"></li>
+	              <li><a href="#">Project</a></li>
+	            </ul>
+	          </li>
+	        </ul>
+	      </div>
+	    </nav>
+	    
+	    <section>
+	      <div class="row">
+	        <div id="column-left" class="col-xs-6 col-sm-5 col-sm-offset-1">
+	          <p>Suspendisse volutpat quis velit a mattis. Fusce enim risus, tempor eu vestibulum et, eleifend sit amet urna. Ut scelerisque dui nulla, sit amet pulvinar justo vehicula id. Sed sit amet libero eu orci dignissim blandit sed venenatis neque. Integer eros augue, dapibus sit amet nunc id, vulputate congue odio. In commodo vel lacus sed luctus. Suspendisse tempus lacus malesuada odio auctor luctus. Etiam accumsan ornare placerat. Duis commodo nulla hendrerit magna mattis tempus. Integer consectetur, orci non lacinia viverra, lacus magna dignissim mauris, consectetur tristique quam magna id lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce a rutrum enim, sed vestibulum elit. Phasellus scelerisque lectus magna, vulputate porta dolor egestas ut. Donec justo mauris, commodo nec tortor et, aliquet volutpat diam.</p>
+	          <p>Nam molestie velit et urna interdum condimentum. Nam ut porttitor ligula. Pellentesque pellentesque ligula scelerisque, venenatis leo quis, porttitor erat. Vivamus lacinia varius magna, et lobortis sapien aliquam in. Vestibulum eget nibh et quam dictum feugiat. Quisque vitae nisi neque. Aliquam faucibus nibh ut neque egestas, et fringilla velit aliquam. Maecenas sed sodales est. Duis nulla massa, accumsan id pulvinar sit amet, auctor ac odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc lobortis nunc arcu, quis lobortis arcu mattis ut. Pellentesque sit amet neque ullamcorper, pretium augue sit amet, feugiat ipsum. Sed vehicula interdum diam, at mattis tortor mattis id. Praesent dapibus iaculis est.</p>
+	          <p>Sed lacus risus, blandit in vestibulum et, condimentum sit amet enim. Donec eget hendrerit metus. Mauris elementum tempus augue, eget tempus ante elementum sit amet. Mauris et nunc mattis, iaculis ante blandit, ornare lacus. In a tempus lorem. Pellentesque vel dolor semper, venenatis libero sit amet, rhoncus libero. Curabitur fringilla pharetra nibh, non euismod sem fermentum eget.</p>
+	        </div>
+	        <div id="column-right" class="col-xs-6 col-sm-5">
+	          <p>In fermentum interdum leo, ac faucibus enim ultrices vel. Nullam a nulla sed elit ultricies convallis. Donec sodales elit id pretium mattis. Donec convallis mattis condimentum. Maecenas aliquam, mi id aliquet eleifend, est purus feugiat orci, ac aliquet ipsum purus eget ipsum. Mauris pretium nulla ut tortor ultricies ornare. Phasellus ac lectus sollicitudin, tincidunt turpis in, congue lorem. Curabitur nibh ipsum, varius vitae enim vitae, malesuada hendrerit ante. Donec pulvinar nec lectus vel ultricies. Morbi cursus metus metus, ut ultricies velit laoreet eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed egestas eu est nec fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In hac habitasse platea dictumst. Cras id hendrerit nunc, at venenatis odio.</p>
+	          <p>Nam mi orci, posuere facilisis tristique iaculis, laoreet dictum sapien. Vestibulum at varius velit. Nullam eu mauris sit amet odio volutpat porttitor ut nec sapien. Morbi ut arcu semper, molestie quam id, ullamcorper nibh. Integer sollicitudin arcu id urna posuere feugiat. Etiam luctus nibh ut condimentum commodo. Pellentesque quis risus non est cursus laoreet ac a dui. Proin augue risus, ornare a euismod sit amet, ullamcorper vitae mi. Nam eu justo laoreet, ullamcorper nisl vitae, placerat neque. Proin venenatis massa sit amet tortor rutrum suscipit. Proin tortor velit, lacinia fermentum ante imperdiet, dapibus gravida tortor. Nulla metus diam, rutrum eu semper ac, faucibus vitae nisi. Suspendisse condimentum nisl nunc, nec elementum est convallis in. Aliquam erat volutpat. Suspendisse fermentum volutpat tellus, sed faucibus diam ultrices in.</p>
+	        </div>
+	      </div>
+		</section>
+	  </body>
+	</html>
+}
+
+lab2 - lab2.css
+css{
+	#header {
+	    padding: 20px;
+	}
+	#header img {
+	    width: 150px;
+	}
+
+	#header a {
+		width: 100px;
+		padding: 0.5em 1em 0.5em 1em;
+		background: darkBlue;
+		border: 1px solid darkBlue;
+		border-radius: 10px;
+		color: white;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	#chat {
+		padding: 0.25em 1em 0.25em 1em;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		background: white;
+		border: 1px solid black;
+	}
+
+	#chat img {
+		width: 1em;
+	}
+}
+
+lab3 - lab3.html
+html{
+	<!DOCTYPE html>
+	<html>
+	  <head>
+	    <title>CSCI 3230U Course Website</title>
+	    <link type="text/css" rel="stylesheet" href="lab3.css" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="bootstrap.min.css" />
+	    <script src="jquery.min.js">
+	    </script>
+	    <script src="bootstrap.min.js">
+	    </script>
+	    <script src="lab3.js">
+	    </script>
+	  </head>
+	  <body>
+	    <div id="header" class="row">
+	      <div class="col-xs-8 col-sm-9 col-sm-offset-1">
+	        <img src="images/logo.jpg" alt="UOIT Logo" />
+	      </div>
+	      <div class="col-xs-4 col-sm-2">
+	        <a href="login">Log In</a>
+	      </div>
+	    </div>
+	    
+	    <div id="chatWindow">
+	      <div id="chatBox">
+	        <div>
+	          Sam: Hey buddy! How are you?
+	        </div>
+	      </div>
+	      <input id="textBox" type="text"/>
+	    </div>
+	    
+	    <div id="chat">
+	      Chat
+	      <img id="chatCaret" src="images/arrow_up.png" alt="open chat window" />
+	    </div>
+	    
+	    <nav class="nav navbar-default">
+	      <div class="container-fluid">
+	        <div class="navbar-header">
+	          <a class="navbar-brand" href="#">CSCI 3230u</a>
+	        </div>
+	        <ul class="nav navbar-nav">
+	          <li class="active"><a href="#">Course Outline</a></li>
+	          <li><a href="#">Lecture Notes</a></li>
+	          <li class="dropdown">
+	            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Assessments<span class="caret"></span></a>
+	            <ul class="dropdown-menu">
+	              <li><a href="#">Labs</a></li>
+	              <li class="divider"></li>
+	              <li><a href="#">Assignments</a></li>
+	              <li class="divider"></li>
+	              <li><a href="#">Project</a></li>
+	            </ul>
+	          </li>
+	        </ul>
+	      </div>
+	    </nav>
+	    
+	    <section>
+	      <div class="row">
+	        <div id="column-left" class="col-xs-6 col-sm-5 col-sm-offset-1">
+	          <p>Suspendisse volutpat quis velit a mattis. Fusce enim risus, tempor eu vestibulum et, eleifend sit amet urna. Ut scelerisque dui nulla, sit amet pulvinar justo vehicula id. Sed sit amet libero eu orci dignissim blandit sed venenatis neque. Integer eros augue, dapibus sit amet nunc id, vulputate congue odio. In commodo vel lacus sed luctus. Suspendisse tempus lacus malesuada odio auctor luctus. Etiam accumsan ornare placerat. Duis commodo nulla hendrerit magna mattis tempus. Integer consectetur, orci non lacinia viverra, lacus magna dignissim mauris, consectetur tristique quam magna id lectus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce a rutrum enim, sed vestibulum elit. Phasellus scelerisque lectus magna, vulputate porta dolor egestas ut. Donec justo mauris, commodo nec tortor et, aliquet volutpat diam.</p>
+	          <p>Nam molestie velit et urna interdum condimentum. Nam ut porttitor ligula. Pellentesque pellentesque ligula scelerisque, venenatis leo quis, porttitor erat. Vivamus lacinia varius magna, et lobortis sapien aliquam in. Vestibulum eget nibh et quam dictum feugiat. Quisque vitae nisi neque. Aliquam faucibus nibh ut neque egestas, et fringilla velit aliquam. Maecenas sed sodales est. Duis nulla massa, accumsan id pulvinar sit amet, auctor ac odio. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc lobortis nunc arcu, quis lobortis arcu mattis ut. Pellentesque sit amet neque ullamcorper, pretium augue sit amet, feugiat ipsum. Sed vehicula interdum diam, at mattis tortor mattis id. Praesent dapibus iaculis est.</p>
+	          <p>Sed lacus risus, blandit in vestibulum et, condimentum sit amet enim. Donec eget hendrerit metus. Mauris elementum tempus augue, eget tempus ante elementum sit amet. Mauris et nunc mattis, iaculis ante blandit, ornare lacus. In a tempus lorem. Pellentesque vel dolor semper, venenatis libero sit amet, rhoncus libero. Curabitur fringilla pharetra nibh, non euismod sem fermentum eget.</p>
+	        </div>
+	        <div id="column-right" class="col-xs-6 col-sm-5">
+	          <p>In fermentum interdum leo, ac faucibus enim ultrices vel. Nullam a nulla sed elit ultricies convallis. Donec sodales elit id pretium mattis. Donec convallis mattis condimentum. Maecenas aliquam, mi id aliquet eleifend, est purus feugiat orci, ac aliquet ipsum purus eget ipsum. Mauris pretium nulla ut tortor ultricies ornare. Phasellus ac lectus sollicitudin, tincidunt turpis in, congue lorem. Curabitur nibh ipsum, varius vitae enim vitae, malesuada hendrerit ante. Donec pulvinar nec lectus vel ultricies. Morbi cursus metus metus, ut ultricies velit laoreet eget. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed egestas eu est nec fringilla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In hac habitasse platea dictumst. Cras id hendrerit nunc, at venenatis odio.</p>
+	          <p>Nam mi orci, posuere facilisis tristique iaculis, laoreet dictum sapien. Vestibulum at varius velit. Nullam eu mauris sit amet odio volutpat porttitor ut nec sapien. Morbi ut arcu semper, molestie quam id, ullamcorper nibh. Integer sollicitudin arcu id urna posuere feugiat. Etiam luctus nibh ut condimentum commodo. Pellentesque quis risus non est cursus laoreet ac a dui. Proin augue risus, ornare a euismod sit amet, ullamcorper vitae mi. Nam eu justo laoreet, ullamcorper nisl vitae, placerat neque. Proin venenatis massa sit amet tortor rutrum suscipit. Proin tortor velit, lacinia fermentum ante imperdiet, dapibus gravida tortor. Nulla metus diam, rutrum eu semper ac, faucibus vitae nisi. Suspendisse condimentum nisl nunc, nec elementum est convallis in. Aliquam erat volutpat. Suspendisse fermentum volutpat tellus, sed faucibus diam ultrices in.</p>
+	        </div>
+	      </div>
+		</section>
+	  </body>
+	</html>
+}
+
+lab3 - lab3.css
+css{
+	#header {
+	    padding: 20px;
+	}
+	#header img {
+	    width: 150px;
+	}
+
+	#header a {
+		width: 100px;
+		padding: 0.5em 1em 0.5em 1em;
+		background: darkBlue;
+		border: 1px solid darkBlue;
+		border-radius: 10px;
+		color: white;
+		text-decoration: none;
+		text-align: center;
+	}
+
+	#chat {
+		padding: 0.25em 1em 0.25em 1em;
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		background: white;
+		border: 1px solid black;
+	}
+
+	#chat img {
+		width: 1em;
+	}
+
+	#chatWindow {
+	  position: fixed;
+	  right: 0;
+	  bottom: 28px;
+	  padding: 25px;
+	  background-color: white;
+	  border: 1px solid black;
+	  display: none;
+	}
+
+	#chatBox {
+	  padding: 0 0 25px 0;
+	}
+
+	#column-right, #column-left{
+	  position: static;
+	}
+}
+
+lab3 - lab3.js
+js{
+	window.onload = function () {
+	  var chatWin = document.getElementById("chatWindow");
+	  var btnChat = document.getElementById("chat");
+	  var editMessage = document.getElementById("textBox");
+
+	  var messageDisplay = document.getElementById("chatBox");
+	  
+	  btnChat.onclick = function () {
+	    if (chatWin.style.display === "none") {
+	      chatWin.style.display = "inline";
+	    } else {
+	      chatWin.style.display = "none";
+	    }
+	  };
+	  editMessage.onkeypress = function (e) {
+	    if (e.keyCode === 13) {
+	      console.log(editMessage.value);
+	      var newMessage;
+	      var newDiv = document.createElement("div");
+	      newDiv.innerHTML = "You: " + editMessage.value;
+	      messageDisplay.appendChild(newDiv);
+	      editMessage.value = "";
+	    }
+	  };
+	};
+}
+
+lab4 - lab4.html
+html{
+	<!DOCTYPE html>
+	<html>
+	  <head>
+	    <title>Lab 4</title>
+		<link rel="stylesheet" href="lab04.css" />
+	    <script type="text/javascript" src="lab04.js"></script>
+	  </head>
+	  <body>
+	    <table>
+		  <tr>
+		    <th>Student ID</th>
+		    <th>Asmt 1</th>
+		    <th>Asmt 2</th>
+		    <th>Asmt 3</th>
+		  </tr>
+		  <tr>
+		    <th>100000000</td>
+		    <td>4.5</td>
+		    <td>3.75</td>
+		    <td>3.4</td>
+		  </tr>
+		  <tr>
+		    <th>100000001</td>
+		    <td>4.25</td>
+		    <td>4.12</td>
+		    <td>4.25</td>
+		  </tr>
+		  <tr>
+		    <th>100000002</td>
+		    <td>5.0</td>
+		    <td>4.75</td>
+		    <td>4.5</td>
+		  </tr>
+		</table>
+	  </body>
+}
+
+lab4 - lab4.css
+css{
+	table {
+	    width: 600px;
+	    border-collapse: collapse;
+	}
+	td,th {
+	    border: 1px solid black;
+	}
+	th {
+	    background-color: darkBlue;
+	    color: white;
+	}
+	.selected {
+	    background-color: lightBlue;
+	}
+}
+
+lab4 - lab4.js
+js{
+	window.onload = function () {
+	  var table = document.getElementsByTagName("tr");
+	  var topHeaders = table.item(0).getElementsByTagName("th");
+	  var cells = document.getElementsByTagName("td");
+	  var previous;
+	  
+	  for (var i = 1; i < topHeaders.length; i++) {
+	    topHeaders.item(i).tabIndex = i;
+	    topHeaders.item(i).onclick = function () {
+	      clearCheck(event.target)
+	      for (var i = 1; i < table.length; i++) {
+	        var row = table.item(i).getElementsByTagName("td");
+	        var cell = row.item(event.target.tabIndex - 1);
+	        cellChange(cell);
+	      }
+	      previous = event.target;
+	    };
+	  }
+	  
+	  for (var i = 1; i < table.length; i++) {
+	    var rowHeaders = table.item(i).getElementsByTagName("th").item(0);
+	    rowHeaders.tabIndex = i;
+	    rowHeaders.onclick = function () {
+	      clearCheck(event.target);
+	      var row = table.item(event.target.tabIndex).getElementsByTagName("td");
+	      for (var i = 0; i < row.length; i++) {
+	        var cell = row.item(i);
+	        cellChange(cell);
+	      }
+	      previous = event.target;
+	    };
+	  }
+	  
+	  for (var i = 0; i < cells.length; i++) {
+	    cells.item(i).onclick = function () {
+	      clearCheck(event.target);
+	      var cell = event.target;
+	      cellChange(cell);
+	      previous = event.target;
+	    };
+	  }
+	  
+	  function clearCheck(newEvent) {
+	    if (previous != newEvent) {
+	      for (var i = 0; i < cells.length; i++) {
+	        cells.item(i).className = "";
+	      }
+	    }
+	  }
+	  
+	  function cellChange(cell) {
+	      if (cell.className == "") {
+	        cell.className = "selected";
+	      } else {
+	        cell.className = "";
+	      }
+	  }
+	};
+}
+
+lab5 - lab5.html
+html{
+	<!DOCTYPE html>
+	<html>
+	  <head>
+	    <title>Lab 5</title>
+		<link rel="stylesheet" href="lab05.css" />
+	    <script type="text/javascript" src="lab05.js"></script>
+	  </head>
+	  <body>
+	    <table>
+		  <tr>
+		    <th>Student ID</th>
+		    <th>Asmt 1</th>
+		    <th>Asmt 2</th>
+		    <th>Asmt 3</th>
+		  </tr>
+		  <tr>
+		    <th>100000000</td>
+		    <td>4.5</td>
+		    <td>3.75</td>
+		    <td>3.4</td>
+		  </tr>
+		  <tr>
+		    <th>100000001</td>
+		    <td>4.25</td>
+		    <td>4.12</td>
+		    <td>4.25</td>
+		  </tr>
+		  <tr>
+		    <th>100000002</td>
+		    <td>5.0</td>
+		    <td>4.75</td>
+		    <td>4.5</td>
+		  </tr>
+		</table>
+	  </body>
+	</html>
+}
+
+lab5 - lab5.css
+css{
+	table {
+	    width: 600px;
+	    border-collapse: collapse;
+	}
+	td,th {
+	    border: 1px solid black;
+	    width: 25%;
+	}
+	th {
+	    background-color: darkBlue;
+	    color: white;
+	}
+	.selected {
+	    background-color: lightBlue;
+	}
+	td input {
+	    width: 100px;
+	}
+}
+
+lab5 - lab5.js
+js{
+	window.onload = function () {
+	  var table = document.getElementsByTagName("tr");
+	  var topHeaders = table.item(0).getElementsByTagName("th");
+	  var cells = document.getElementsByTagName("td");
+	  var previous;
+	  var perviousValue;
+	  
+	  for (var i = 1; i < topHeaders.length; i++) {
+	    topHeaders.item(i).tabIndex = i;
+	    topHeaders.item(i).onclick = function () {
+	      clearCheck(event.target)
+	      for (var i = 1; i < table.length; i++) {
+	        var row = table.item(i).getElementsByTagName("td");
+	        var cell = row.item(event.target.tabIndex - 1);
+	        cellChange(cell);
+	      }
+	      previous = event.target;
+	    };
+	  }
+	  
+	  for (var i = 1; i < table.length; i++) {
+	    var rowHeaders = table.item(i).getElementsByTagName("th").item(0);
+	    rowHeaders.tabIndex = i;
+	    rowHeaders.onclick = function () {
+	      clearCheck(event.target);
+	      var row = table.item(event.target.tabIndex).getElementsByTagName("td");
+	      for (var i = 0; i < row.length; i++) {
+	        var cell = row.item(i);
+	        cellChange(cell);
+	      }
+	      previous = event.target;
+	    };
+	  }
+	  
+	  for (var i = 0; i < cells.length; i++) {
+	    cells.item(i).onclick = function () {
+	      var cell = event.target;
+	      if (event.target.tagName != "INPUT") {
+	        clearCheck(cell);
+	        cellChange(cell);
+	        var inputBox = cell.getElementsByTagName('input');
+	        if(cell.childElementCount == 0){
+	          var input = document.createElement('input');
+	          input.type = 'text';
+	          input.value = cell.textContent;
+	          cell.textContent = '';
+	          cell.appendChild(input);
+	          previousValue = input.value;
+	          input.focus();
+	          inputBox.item(0).onkeypress = function (e) {
+	            if (e.keyCode === 13) {
+	              event.target.parentNode.className = '';
+	              event.target.parentNode.textContent = event.target.value;
+	            }
+	          };
+	          inputBox.item(0).onblur = function () {
+	            event.target.parentNode.className = '';
+	            event.target.parentNode.textContent = previousValue;
+	          };
+	        }
+	      } else {
+	        previous = event.target;
+	      }
+	    };
+	  }
+	  
+	  function clearCheck(newEvent) {
+	    if (previous != newEvent) {
+	      for (var i = 0; i < cells.length; i++) {
+	        cells.item(i).className = "";
+	      }
+	    }
+	  }
+	  
+	  function cellChange(cell) {
+	      if (cell.className == "") {
+	        cell.className = "selected";
+	      } else {
+	        cell.className = "";
+	      }
+	  }
+	};
+}
+
+lab6 - lab6.html
+html{
+	<!DOCTYPE html>
+	<html>
+	  <head>
+	    <title>Lab 6</title>
+		<link rel="stylesheet" href="lab06.css" />
+	    <script type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+	    <script type="text/javascript" src="lab06.js"></script>
+	  </head>
+	  <body>
+	    <table>
+		  <tr>
+		    <th>Student ID</th>
+		    <th>Asmt 1</th>
+		    <th>Asmt 2</th>
+		    <th>Asmt 3</th>
+		  </tr>
+		  <tr>
+		    <th>100000000</td>
+		    <td>4.5</td>
+		    <td>3.75</td>
+		    <td>3.4</td>
+		  </tr>
+		  <tr>
+		    <th>100000001</td>
+		    <td>4.25</td>
+		    <td>4.12</td>
+		    <td>4.25</td>
+		  </tr>
+		  <tr>
+		    <th>100000002</td>
+		    <td>5.0</td>
+		    <td>4.75</td>
+		    <td>4.5</td>
+		  </tr>
+		</table>
+	  </body>
+	</html>
+}
+
+lab6 - lab6.css
+css{
+	table {
+	    width: 600px;
+	    border-collapse: collapse;
+	}
+	td,th {
+	    border: 1px solid black;
+	    width: 25%;
+	}
+	th {
+	    background-color: darkBlue;
+	    color: white;
+	}
+	.selected {
+	    background-color: lightBlue;
+	}
+	td input {
+	    width: 100px;
+	}
+}
+
+lab6 - lab6.js
+js{
+	$(document).ready(function () {
+	  $('td').toggleClass('selected');
+	  var value;
+	  var previous = $(this);
+	  $('td').click(function() {
+	    
+	    if ($(this).has('input').length) {
+	      return;
+	    }
+	    
+	    value = $(this).text();
+	    
+	    if (!$(this).is(previous)) {
+	      $('td').removeClass('selected');
+	    }
+	    
+	    $(this).toggleClass('selected');
+	    
+	    $(this).html('<input type=\'text\'></input>');
+	    
+	    $('input').val(value);
+	    
+	    $('input').focus();
+	    
+	    $('input').keypress(function (e) {
+	      if (e.which == '13') {
+	        $(this).parent().text($(this).val());
+	        $('td').removeClass('selected');
+	        $(this).remove();
+	      }
+	    });
+	    
+	    $('input').focusout(function () {
+	      $(this).parent().text(value);
+	      $('td').removeClass('selected');
+	      $(this).remove();
+	    });
+	    
+	    previous = $(this);
+	    
+	  });
+	  
+	  $('th').click(function () {
+	    
+	    if (!$(this).is(previous)) {
+	      
+	      $('td').removeClass('selected');
+	    }
+	    
+	    if ($(this).siblings('td').length != 0) {
+	      $(this).siblings().toggleClass('selected');
+	    } else {
+	      var index = $(this).index();
+	      index++;
+	      $("tr td:nth-child("+index+")").toggleClass('selected');
+	    }
+
+	    previous = $(this);
+	    
+	  });
+	});
+}
+
+Lec1 - notes
+html{
+	<!DOCTYPE html>
+	<html lang="en">
+	  <head>
+	    <meta charset="utf-8">
+	    <title>Document Title</title>
+	    <link rel="stylesheet" href="styles/main.css" />
+	    <script type="javascript" src="js/main.js"></script>
+	  </head>
+	  <body>
+	    <h1>Heading</h1>
+	    <p>This is a paragraph of text.</p>
+	  </body>
+	</html>
+}
+
+css{
+	.logoText {
+	    font-family: 'Caveat';
+	}
+	body {
+	    padding-top: 50px;
+	    font-family: Montserrat;
+	}
+}
+
+Responsive User Interface
+html{
+	<link rel="stylesheet" 
+	      href="styles/main.css" 
+	      type="text/css" />
+	<link rel="stylesheet" 
+	      href="styles/tablet.css" 
+	      type="text/css" 
+	      media="screen and (min-width: 701px) and (max-width: 800px)" />
+	<link rel="stylesheet" 
+	      href="styles/phone.css" 
+	      type="text/css" 
+	      media="screen and (max-width: 700px)" />
+}
+
+Containers - fluid - full width, with padding
+html{
+	<div class="container-fluid">
+	  <h1>Heading</h1>
+	  <p>This is a paragraph of text.</p>
+	</div>
+}
+
+Containers - fixed width, with padding
+html{
+	<div class="container">
+	  <h1>Heading</h1>
+	  <p>This is a paragraph of text.</p>
+	</div>
+}
+
+Accessibility - screen readers
+html{
+	<div class="sr-only">
+	  Read by a screen reader, but hidden elsewhere.
+	</div>
+}
+
+Bootstrap - nav bars
+html{
+	<div class="navbar-toggleable-xs" id="bd-main-nav">
+	  <nav class="navbar navbar-inverse navbar-fixed-top">
+	    <div class="container-fluid">
+	      <div class="navbar-header">
+	        <a class="navbar-brand" href="#">Title</a>
+	      </div>
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="#link1">Link 1</a></li>
+	        <li><a href="#link2">Link 2</a></li>
+	        <li><a href="#link3">Link 3</a></li>
+	      </ul>
+	    </div>
+	  </nav>
+	</div>
+}
+
+Bootstrap - col size (12 col grid)
+text{
+	col-<ss>-<cs>
+	ss - screen size
+	xs - extra small, phone (less than 768px wide)
+	sm - small, tablet (less than 992px wide)
+	md - medium, laptop (less than 1200px wide)
+	lg - large, desktop (1200px wide or greater)
+	cs - size in columns
+}
+
+Tables
+html{
+	<div class="table-responsive">
+	 <table class="table table-striped table-hover">
+	  <thead>
+	    <tr>
+	      <th>Month</th>
+	      <th>Units Sold</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <td>August</td>
+	      <td>12 603</td>
+	    </tr>
+	  </tbody>
+	 </table>
+	</div>
+}
+
+Forms
+html{
+	<form class="form-horizontal" role="form">
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label">Username</label>
+	    <div class="col-sm-10">
+	      <input class="form-control" id="username" type="text" value="Click to focus" />
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label">Username</label>
+	    <div class="col-sm-10">
+	      <input class="form-control" id="username" type="text" value="Click to focus" />
+	    </div>
+	  </div>
+	</form>
+}
+
+JS - API reference: Strings
+js{
+	int position1 = str.indexOf('def');
+	int position2 = str.lastIndexOf('def');
+	int notThere = str.indexOf('aaa');
+	var str2 = str.replace("abc", "ABC"); // 1st
+	var str3 = str.slice(3, 6);
+	var str4 = str.substr(3, 3);
+	var str5 = str.toUpperCase();
+	var str6 = "the quick brown fox jumped over";
+	var words = str6.split(' ');
+}
+
+JS - API reference: Maths
+js{
+	var ceil = Math.ceil(7.5);
+	var floor = Math.floor(7.5);
+	var round = Math.round(7.5);
+	var sqrt = Math.sqrt(16);
+	var dieRoll = Math.floor(1 + Math.random() * 6);
+	function areaOfCircle(radius) {
+	  return Math.PI * Math.pow(radius, 2);
+	}
+}
+
+JS - API reference: Arrays
+js{
+	var array1 = ["the", "quick", "brown"];
+	var array2 = ["fox", "jumped", "over", "the"];
+	var merged = array1.concat(array2);
+	var phrase = merged.join(' ');
+	var brown = array1.pop();
+	var array3 = array1.push("orange");
+	var the = array1.shift();
+	var array4 = array1.unshift("a");
+	var backwards = array1.reverse();
+	var quickbrown = array1.slice(1, 2);
+	var sorted = merged.sort();
+	var afastyellow = array4.splice(1, 1, "fast");
+	console.log('afastyellow: ' + afastyellow);
+}
+
+JS - API reference: Dates
+js{
+	var rightNow = new Date();
+	var tomorrow = new Date();
+	tomorrow.setDate(tomorrow.getDate()+1);
+	var halloween2008 = new Date(08,10,31);
+	var newYears2025 = new Date();
+	newYears2025.setFullYear(2025,01,01);
+	if (rightNow > newYears2025) {
+	  console.log('Happy new year!');
+	}
+}
+
+REGEX
+js{
+	var badWordsPattern = /darn|crud|gosh/;
+	var text5 = "It took me all day to write the gosh darned thing.";
+	if (text5.match(badWordsPattern)) {
+	   console.log("This post contains some bad words.");
+	}
+
+	var costPattern = /\$[0-9]+/;
+	var text1 = 'I paid $100 for this item.';
+	var text2 = text1.replace(costPattern, '$...');
+	console.log(text2);
+
+	var wordPattern = /the/ig;
+	var text3 = 'the quick brown fox jumped over the';
+	var match = text3.replace(wordPattern, 'a');
+	console.log(match);
+
+	var emailPattern = /\w@\w[.\w]+/;
+
+	var email1 = 'rfortier@macrosoft.ca';
+	var email1Ok = emailPattern.test(email1);
+	if (email1Ok)
+	  console.log(email1 + ' is ok.');
+	var email2 = 'rfortier';
+	var email2Ok = emailPattern.test(email2);
+	if (email2Ok)
+	  console.log(email2 + ' is ok.')
+}
+
+text{
+	\ - escape
+	^ - beginning
+	$ - ending
+	* - 0 or more
+	+ - 1 or more
+	? - 0 or 1
+	. - any char but newline
+	[^] - not those
+	[] - char set
+	{n} - matches specifically 'n' occurances
+	{n,m} - matchs atleast 'n' and max 'm'
+}
+
+Event handling
+js{
+	var dropdown = document.getElementById('country');
+	dropdown.onchange = function() {
+	    // update provinces or states
+	};
+}
+
+Event handling - Provides details
+js{
+	var button = document.getElementById('loginButton');
+	button.onclick = function() {
+	  var event = window.event;
+	  var x = event.clientX;
+	  var y = event.clientY;
+	  // do something with x and y
+	}
+}
+
+Event handling - Properties
+js{
+	var button = document.getElementById('loginButton');
+	button.onclick = function() {
+	  var event = window.event;
+	  console.log(event.target);    // generating element
+	  console.log(event.type);      // e.g. onclick
+	  console.log(event.timeStamp); // when
+	}
+}
+
+Event handling - Mouse events
+text{
+	Mouse events:
+	onmouseover – Mouse is over top of the rectangle bounding this element
+	onmouseout – Mouse has left the rectangle bounding this element
+	onclick – The user has clicked within the bounding rect.
+	ondblclick – As above, but a double-click
+	onmousedown – The mouse button was pressed down
+	onmouseup – The mouse button was released
+}
+
+js{
+	var div = document.getElementById('div');
+	div.onmousemove = function() {
+	  var event = window.event;
+	  console.log(event.screenX);   // absolute screen coordinates
+	  console.log(event.screenY);
+	  console.log(event.clientX);   // coordinates relative to the div
+	  console.log(event.clientY);
+	  console.log(event.button);    // which button
+	  console.log(event.altKey);    // was ALT pressed?
+	  console.log(event.ctrlKey);   // was CTRL pressed?
+	  console.log(event.shiftKey);  // was SHIFT pressed?
+	}
+}
+
+Event handling - Keyboard events
+text{
+	onkeydown – A keyboard key has been pressed down
+	onkeyup – A keyboard key is been released
+	onkeypress – A keyboard key has been pressed and released, as a keystroke
+}
+
+js{
+	var div = document.getElementById('div');
+	div.onkeypress = function() {
+	  var event = window.event;
+	  console.log(event.keyIdentifier); // which key
+	  console.log(event.altKey);        // was ALT pressed?
+	  console.log(event.ctrlKey);       // was CTRL pressed?
+	  console.log(event.shiftKey);      // was SHIFT pressed?
+	}
+}
+
+Event handling - Form event
+text{
+	onsubmit– The form has been submitted (used for validation)
+}
+
+Event handling - Form element event
+text{
+	onfocus – The form element is now the active form element (e.g. the user clicks in a text field)
+	onblur – The form element is no longer the active form element
+	onchange – The value of the form element has changed (used for validation)
+}
+
+DHTML - Obtaining DOM objects
+js{
+	window.onload = function() {
+	   var div = document.getElementById("myDiv");
+	   var divChild = div.getElementById("myP");
+	   var allPs = document.getElementsByTagName("p");
+	   var firstName = document.querySelector("#firstName"); // id
+	   var comments = document.querySelectorAll(".comment"); // CSS class
+	   var rows = document.querySelectorAll("tr");           // element name
+	   var even = rows.querySelectorAll(":nth-child(2n)");   // pseudoclass
+	};
+}
+
+DHTML - Object properties of element
+js{
+	window.onload = function() {
+	   var div = document.getElementById("myDiv");
+	   console.log(div.id);           // the unique ID for the element
+	   console.log(div.innerHTML);    // the content of the element, as HTML
+	   console.log(div.nodeName);     // the name of the HTML element (e.g. div)
+	   console.log(div.className);    // the CSS class(es) assigned to the element
+	   console.log(div.style);        // a dictionary with all the CSS properties for this element 
+	                                  // (e.g. element.style.backgroundColor)
+	   console.log(div.clientWidth); 
+	   console.log(div.clientHeight); // the screen dimensions of this element
+	};
+}
+
+DHTML - Object properties of element's children
+js{
+	window.onload = function() {
+	   var div = document.getElementById("myDiv");
+	   console.log(div.childNodes); // a NodeList of children
+	   console.log(div.firstChild);
+	   console.log(div.lastChild);
+	   div.removeChild(div.lastChild);
+	   div.replaceChild(newNode, div.lastChild));
+	};
+}
+
+DHTML - Object properties of element's other relationship
+js{
+	window.onload = function() {
+	   var div = document.getElementById("myDiv");
+	   console.log(div.parentNode);      // parent node of this element
+	   console.log(div.nextSibling);     // next child with the same parent
+	   console.log(div.previousSibling); // prev child with the same parent
+	};
+}
+
+DHTML - Attribute names and values
+js{
+	window.onload = function() {
+	   var img = document.getElementById("logo");
+	   var attrib = img.getAttribute("alt");
+	   console.log(attrib.name + ": " + attrib.value);
+	};
+}
+
+DHTML - Modifying DOM elements
+js{
+	var div1 = document.getElementById("div1");
+	div1.innerHTML = 'Hi from JavaScript';
+
+	var div2 = document.getElementById("div2");
+	div2.innerHTML = '<p>Dynamic paragraph</p>';
+
+	var div3 = document.getElementById("div3");
+	div3.style.color = '#ff0000';
+	div3.style.width = '300px';
+}
+
+DHTML - CSS Style attributes
+text{
+	CSS properties has dashs
+	invalid syntax therefore use camelcase
+	border-radius: 10px; -> 
+	div.style.borderRadius = '10px';
+}
+
+jQuery - Selectors
+text{
+	$(document) – selects the document element
+	$('div') – selects all 'div' tags
+	$('div a') - any 'a' descendant of a 'div'
+	$('div > a') - any 'a' direct child of a 'div'
+	$('.emph') – selects all tags with the CSS class ‘emph’
+	$('div.emph') – selects all divs with CSS class ‘emph’
+	$('#title') – selects the first tag with the id ‘title’
+	$('div#title') – selects the first div with the id ‘title’
+	$('[src^=/images]') - src starts with '/images'
+	$('[src$=png]') - src ends with 'png'
+	$('[src*=icon]') - src contains 'icon'
+	$(':nth-child(5)') - selects elements that are 5th child
+	$('div:even') - selects even child div elements
+}
+
+jQuery - Events
+text{
+	ready - DOM element is loaded and ready
+	click/dblclick/toggle
+	hover/mouseenter/mouseleave
+	keypress/keydown/keyup - in text field/area
+	focus/focusin/focusout - active form element
+	submit - form submitted
+	select - text selected in a text field or textarea
+	change - text field, dropdown or other form element value changed
+}
+
+jQuery - Visibility
+js{
+	$('p').show();
+	$('p').hide();
+}
+
+jQuery - Size
+js{
+	$('p').width($(window).width()/2);
+	$('p').height($(window).height()/2);
+}
+
+jQuery - Fades
+js{
+	$('p').fadeIn('slow');   // 600ms
+	$('p').fadeOut('fast');  // 200ms
+	$('p').fadeToggle(1000); // 1000ms
+}
+
+jQuery - Slides
+js{
+	$('p').slideUp('slow'); // slide up and away
+	$('p').slideDown();     // slide down into place
+}
+
+jQuery - Animations (numeric CSS properties)
+js{
+	var properties = {padding: '+=5px',
+	                  margin: '+=5px'};
+	var handler = function() {};
+	$('p').animate(properties, 1000, handler);
+}
+
+jQuery - DOM traversal
+text{
+	$('#x').children() - returns all children of the matched element
+	$('#x').parent() - the parent of the matched element
+	$('#x').find() - searches the descendants by selector
+	$('#x').next() - the next sibling
+	$('#x').prev() - the previous sibling
+	$('#x').siblings() - all siblings
+}
+
+jQuery - DOM Retrieval
+text{
+	$('#x').text() - returns contain (non-HTML) text
+	$('#x').html() - returns inner HTML text
+	$('#x').val() - returns value of a form element
+	$('#x').prop('propName') - returns value of an attribute
+	$('#x').attr('attrName') - same as above	
+}
+
+jQuery - DOM Modification
+text{
+	$('#x').text('some text') - sets non-HTML contents
+	$('#x').html('<div>some text</div>') - sets HTML contents
+	$('#someField').val('some text') - sets form field value
+	$('#x').css('propName', 'propValue') - sets CSS property
+	$('#x').css({prop1: 'value', prop2: 'value'}) - sets multiple CSS properties
+	$('#x').wrap('<div />') - wraps an element in another
+	$('#x').clone() - returns a (deep) copy of the match
+	$('#x').append($('<div>some text</div>')) - inside at end
+	$('<div>some text</div>').appendTo('#x')
+	$('#x').prepend($('<div>some text</div>')) - inside at start
+	$('<div>some text</div>').prependTo('#x')
+	$('#x').after($('<div>some text</div>')) - outside at end
+	$('<div>some text</div>').insertAfter('#x')
+	$('#x').before($('<div>some text</div>')) - outside at start
+	$('<div>some text</div>').insertBefore('#x')
+	$('#x').replaceWith($('<div>some text</div>')) - replace
+	$('<div>some text</div>').replaceAll('#x')
+}
+
