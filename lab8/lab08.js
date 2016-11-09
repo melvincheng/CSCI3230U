@@ -24,18 +24,22 @@ $(document).ready(function () {
       headerDiv.append(h2);
       headerDiv.append(h4);
       headerDiv.append(sumDiv);
+      headerDiv.append($('<hr>'));
       
       var conDiv = $('<div>');
       conDiv.append(content);
       
       
       storyDiv.append(headerDiv);
-      storyDiv.append('<hr>');
       storyDiv.append(conDiv);
       
       storyDiv.addClass('story');
       
       stories.append(storyDiv);
+      $('.story').accordion({active: false,
+                             collapsible: true,
+                             heightStyle:'content',
+                             });
       
     });
   })
