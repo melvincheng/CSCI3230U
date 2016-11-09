@@ -1,7 +1,11 @@
 #weather {
-  background-color: deepskyblue;
+  background-color: lightblue;
   border: 2px solid mediumslateblue;
   border-radius: 5px;
   font-family: sans-serif;
   padding: 0 50px 20px 50px; 
+}
+
+#map-canvas {
+  height: 400px;
 }

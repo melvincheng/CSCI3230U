@@ -1,16 +1,19 @@
 $(document).ready(function () {
-  downloadWeather(43.944847, -78.891703);
-  $('#goButton').onClick = function () {
-    var lat = $('#lat').val;
-    var lon = $('#lon').val;
-    console.log('clicked');
+  $('#weather').hide();
+  $('#goButton').click(function () {
+    $('#weather').show();
+    var lat = $('#lat').val();
+    var lon = $('#lon').val();
+    $('#map-canvas').html('');
+    $('#weather').html('');
+    $('#forecast').html('');
     downloadWeather(lat, lon);
     downloadForecast(lat, lon);
     showMap(lat, lon);
-  };
+  });
   
   function downloadWeather(lat, lon) {
-    $.get('http://api.openweathermap.org/data/2.5/weather?lat=43.944847&lon=-78.891703&units=metric&APPID=a5e028da72423922ec83fb389d5f9864', function (data) {
+    $.get('http://api.openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+lon+'&units=metric&APPID=a5e028da72423922ec83fb389d5f9864', function (data) {
       var main = $(data)[0].main;
       
       var wind = $(data)[0].wind;
@@ -82,10 +85,42 @@ $(document).ready(function () {
   }
   
   function downloadForecast(lat, lon) {
-    
+    $.get('http://api.openweathermap.org/data/2.5/forecast/daily?cnt=10&mode=xml&lat='+lat+'&lon='+lon+'&units=metric&APPID=a5e028da72423922ec83fb389d5f9864', function (data) {
+      var forecast = $('<table>');
+      var headers = $('<tr>');
+      headers.append($('<th>').append('Date'));
+      headers.append($('<th>').append('Symbol'));
+      headers.append($('<th>').append('High'));
+      headers.append($('<th>').append('Low'));
+      headers.append($('<th>').append('Wind'));
+      headers.append($('<th>').append('Clouds'));
+      forecast.append(headers);
+      
+      $(data).find('time').each(function(data) {
+        var info = $('<tr>')
+        info.append($('<td>').append($(this)[0].getAttribute('day')));
+        info.append($('<td>').append($('<img>').attr('src', 'images/' + $(this).find('symbol')[0].getAttribute('number') + '.png')));
+        info.append($('<td>').append($(this).find('temperature')[0].getAttribute('max') + '&deg;C'));
+        info.append($('<td>').append($(this).find('temperature')[0].getAttribute('min') + '&deg;C'));
+        info.append($('<td>').append($(this).find('windSpeed')[0].getAttribute('name')));
+        info.append($('<td>').append($(this).find('clouds')[0].getAttribute('value')));
+        
+        forecast.append(info);
+      });
+      forecast.addClass('table');
+      $('#forecast').append(forecast);
+      
+    });
   }
   
   function showMap(lat, lon) {
-    
+    console.log(lat);
+    console.log(parseFloat(lat,10));
+    console.log(lon);
+    console.log(parseFloat(lon,10));
+    var map = new google.maps.Map(document.getElementById('map-canvas'), {
+      center: {lat: parseFloat(lat,10), lng: parseFloat(lon,10)},
+      zoom: 12
+    });
   }
 });
