@@ -1,0 +1,115 @@
+.pageHeader {
+  background-color: #000070;
+  font-size: 24pt;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.pageHeader img {
+  max-height: 10%;
+  max-width: 10%;
+}
+
+.navigation {
+  background-color: #000070;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.navigation li{
+  display: table-cell;
+  padding: 0 50px 0 50px;
+}
+
+.navigation li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #f0f0ff;
+}
+
+.header {
+  color: white;
+  background-color: #000070;
+  padding: 0.2em;
+  padding-left: 1em;
+}
+
+.body {
+  border: 1px solid #000070;
+  background-color: #f0f0ff;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table tr td, th {
+  border: 1px solid #000070;
+  width: 14%;
+}
+
+table tr td {
+  text-align: left;
+  vertical-align: top;
+  height: 100;
+}
+
+table tr:first-child th {
+  column-span: all;
+}
+
+#month {
+  text-align: center;
+  font-size: 24pt;
+}
+
+#comments {
+  background-color: grey;
+  border-color: black;
+  padding: 10px;
+  border-style: groove;
+  margin-bottom: 5px;
+}
+
+#commentLabel {
+  font-size: 24pt;
+}
+
+.commentHeader div:first-child{
+  font-size: 18pt;
+}
+
+.commentHeader div:last-child {
+  font-size: 10pt;
+}
+
+.commentHeader {
+  color: white;
+  background-color: #000070;
+  padding: 0.2em;
+  padding-left: 1em;
+}
+
+.commentBody {
+  border: 1px solid #000070;
+  background-color: #f0f0ff;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+#commentsForm {
+  background-color: lightslategrey;
+  padding: 25px;
+  border-style: double;
+}
+
+#commentsForm div {
+  font-size: 24pt;
+}
+
+textarea {
+  width: 100%;
+}

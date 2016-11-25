@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Comments</title>
+    <link rel="stylesheet" href="chess.css" />
+  </head>
+  <body>
+    <div>
+      <header>
+        <div class="pageHeader">
+          <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Chess_qdt45.svg/480px-Chess_qdt45.svg.png" alt = "Chess logo" />
+          Comments
+        </div>
+        <div class = "navigation">
+          <nav>
+            <ul>
+              <li><a href="main.html">Main page</a></li>
+              <li><a href="schedule.html">Schedule</a></li>
+              <li><a href="comments.html">Comments</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div id="comments">
+        <div id="commentLabel">Comments:</div>
+        <section>
+          <div class="commentHeader">
+            <div>Interesting</div>
+            <div>John Smith</div>
+            <div>2016-10-21</div>
+          </div>
+          <div class="commentBody">Chess seems very interesting. I think I will try it some day.</div>
+        </section>
+        <section>
+          <div class="commentHeader">
+            <div>Pretty nice</div>
+            <div>Emma Hoffmann</div>
+            <div>2016-10-10</div>
+          </div>
+          <div class="commentBody">This site looks pretty nice. I give it a 11/10.</div>
+        </section>
+      </div>
+      <div id="commentsForm">
+        <div>Leave a comment:</div>
+        <form action="comments.html" method="post">
+          <label>Title:</label>
+          <input type = "text" name="title"/>
+          <label>Name:</label>
+          <input type = "text" name="author"/>
+          <label>Date:</label>
+          <input type = "text" name="date"/>
+          <textarea name = "comment" rows = "10"></textarea>
+          <button type="submit" name="submitBtn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
